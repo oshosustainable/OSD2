@@ -1,0 +1,33 @@
+.nocareer{
+    color: rgba(11, 41, 55, 0.95);
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+.career-form{
+    /* width: 80%; */
+    /* margin: auto; */
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    background-color: rgba(185, 221, 238, 0.95);
+    border-radius: 8px;
+    padding: 12px;
+    overflow: hidden;
+}
+.career-form input{
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+.career-form #submit{
+    color: white;
+    background-color: rgba(44, 103, 130, 0.95);
+    border-color: white;
+    transition: .4s;
+}
+.career-form #submit:hover{
+    color: rgba(11, 41, 55, 0.95);
+    background-color: white;
+    border-color: rgba(11, 41, 55, 0.95);
+}

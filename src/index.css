@@ -1,0 +1,13 @@
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(11, 41, 55, 1);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(93, 124, 139, 0.95);
+  }
+  html{
+    scroll-behavior: smooth;
+  }

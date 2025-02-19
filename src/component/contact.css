@@ -1,0 +1,58 @@
+.allcontact{
+    padding: 40px 0px;
+    background-color: rgba(11, 41, 55, 0.95);
+}
+.contact-content{
+    width: 80%;
+    margin: auto;
+}
+.allcontact h1{
+    font-size: 48px;
+    
+    color: white;
+}
+.maps{
+    margin-top: 20px;
+}
+
+
+
+.contact-details{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-info h3{
+    color: white;
+}
+.contact-info h5{
+    color: lightgray;
+}
+.contact-info{
+    margin-bottom: 30px;
+}
+
+
+
+.contact-form input{
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+textarea{
+    padding: 8px;
+    border-radius: 10px;
+
+}
+#submit{
+    margin-top: 5px;
+    border-radius: 5px;
+    background: rgba(44, 103, 130, 0.95);
+    border-color: white;
+    color: white;
+    padding: 0px;
+    width: 150px;
+}

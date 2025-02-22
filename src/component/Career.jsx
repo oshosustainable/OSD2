@@ -12,7 +12,7 @@ const Career = () => {
 
     <div className="career-form">
             <h5>Drop your CV anyway.</h5><br />
-            <form action="https://formsubmit.co/mahatsatish@gmail.com" method="POST" className="app" target="_blank" encType='multipart/form-data' >
+            <form action="https://formsubmit.co/osddevelopers@gmail.com" method="POST" className="app" target="_blank" encType='multipart/form-data' >
                 <input type="text" name="firstname" id="fname" placeholder="First Name*" required /><br />
 
                 <input type="text" name="lastname" id="lname" placeholder="Last Name*" required /><br />

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const Footer = () => {
   return (
@@ -20,10 +22,10 @@ const Footer = () => {
             <div className="col-6 col-md-4 mb-4">
               <h4>Quick links</h4>
               <ul className="nav flex-column">
-                <li className="nav-item mb-2"><a href="/home" className="nav-link p-0 text-dark">Home</a></li>
-                <li className="nav-item mb-2"><a href="/about" className="nav-link p-0 text-dark">About</a></li>
-                <li className="nav-item mb-2"><a href="/projects" className="nav-link p-0 text-dark">Projects</a></li>
-                <li className="nav-item mb-2"><a href="/career" className="nav-link p-0 text-dark">Career</a></li>
+                <li className="nav-item mb-2"><Link to="/home" className="nav-link p-0 text-dark">Home</Link></li>
+                <li className="nav-item mb-2"><Link to="/about" className="nav-link p-0 text-dark">About</Link></li>
+                <li className="nav-item mb-2"><Link to="/projects" className="nav-link p-0 text-dark">Projects</Link></li>
+                <li className="nav-item mb-2"><Link to="/career" className="nav-link p-0 text-dark">Career</Link></li>
 
                 </ul>
             </div>

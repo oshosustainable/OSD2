@@ -46,7 +46,7 @@ const Counter = () => {
 
         <div className="stats-container">
           <div className="stat">
-            <div className="stat-value" data-end="100"></div>
+            <div className="stat-value" data-end="1000"></div>
             <div className="stat-title">Designs</div>
           </div>
 

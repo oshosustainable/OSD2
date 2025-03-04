@@ -8,7 +8,7 @@ const Mainpageabout = () => {
     <>
       <div className="about-main">
       <h1>About Us</h1>
-      <h4>OSHO Sustainable <span>Designer and Developer</span></h4>
+      <h4>OSHO Sustainable <span>Designers and Developers</span></h4>
       <p>
           Crafting visionary designs, our design and development firm blends creativity and precision to shape extraordinary spaces. 
           With a passion for innovation, we transform concepts into functional and awe-inspiring environments. 

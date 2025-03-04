@@ -39,7 +39,7 @@
     object-fit: cover;
 }
 .sec-img-1{
-    font-weight: 700;
+    font-weight: 600;
     color: black;
     z-index: 5;
     position: absolute;
@@ -56,4 +56,50 @@
     top: 50%;
     left: 75%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 640px) {
+    .service-container {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .main-services>img,
+    .secondary-services img {
+        width: 100%; /* Make images full width */
+        height: 250px; /* Keep uniform height */
+        object-fit: cover;
+        margin-bottom: 10px; /* Add space between images */
+    }
+
+    .secondary-services {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .sec-img-1{
+        
+        position: absolute;
+        left: 50%;
+        top:25%;
+        transform: translate(-50%, -50%);
+        /* font-size: 22px; */
+        font-weight: 700;
+        color: black;
+        text-align: center;
+        white-space: nowrap;
+        
+    }
+    .sec-img-2 {
+        position: absolute;
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%, -50%);
+        /* font-size: 22px; */
+        font-weight: 700;
+        color: black;
+        text-align: center;
+        white-space: nowrap;
+    }
 }

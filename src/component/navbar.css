@@ -13,26 +13,40 @@ nav{
 }
 nav .wrapper{
   position: relative;
-  width: 80%;
-  height: 60px;
+  width: 85%;
+  height: 75px;
   line-height: 70px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.logo{
-margin-top: 10px;
-}
-.wrapper .logo a{
-  
-  color: #f2f2f2;
-  
-  font-size: 38px;
-  font-weight: 500;
+
+/* Updated Logo Styling */
+.logo a {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
-  
+  align-items: start; /* Aligns text properly */
 }
+
+
+.logo-main {
+  color: #f2f2f2;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: -16px;
+}
+
+.logo-sub {
+  color: #f2f2f2;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 8px;
+  margin-top: 2px; /* Adds spacing */
+  margin-bottom: 20px;
+}
+
 .wrapper .nav-links{
   display: inline-flex;
 }
@@ -140,7 +154,18 @@ margin-top: 10px;
   top: 10px;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1070px) {
+  nav .wrapper{
+    width:90%;
+    height: 65px;
+  }
+  .logo-main{
+    font-size: 30px;
+  }
+  .logo-sub{
+    font-size: 9px;
+    line-height: 1px;
+  }
   .wrapper .btn{
     display: block;
   }

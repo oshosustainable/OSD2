@@ -1,43 +1,29 @@
-import React, { useEffect } from 'react';
-import './counter.css';
-import ReactDOM from 'react-dom';
-import CountUp from 'react-countup';
+import React from "react";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import "./counter.css";
+
+const Stat = ({ end, title }) => {
+  const { ref, inView } = useInView({ triggerOnce: true });
+
+  return (
+    <div className="stat">
+      <div ref={ref} className="stat-value">
+        {inView ? <CountUp start={0} end={end} duration={4.8} /> : 0}
+        <span>+</span>
+      </div>
+      <div className="stat-title">{title}</div>
+    </div>
+  );
+};
 
 const Counter = () => {
-  useEffect(() => {
-    const statValues = document.querySelectorAll('.stat-value');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const statValueElement = entry.target;
-          const endValue = statValueElement.getAttribute('data-end');
-
-          // Create a dynamic React component
-          const countupComponent = (
-            <>
-            <CountUp start={0} end={parseInt(endValue, 10)} duration={4.8} />
-            <span>+</span>
-            </>
-          );
-
-          // Render the React component inside the stat-value element
-          ReactDOM.render(countupComponent, statValueElement);
-        }
-      });
-    });
-
-    statValues.forEach(statValue => {
-      observer.observe(statValue);
-    });
-
-    // Clean up the IntersectionObserver when the component is unmounted
-    return () => {
-      statValues.forEach(statValue => {
-        observer.unobserve(statValue);
-      });
-    };
-  }, []); // Empty dependency array ensures useEffect runs only once on mount
+  const stats = [
+    { end: 1000, title: "Designs" },
+    { end: 10, title: "Constructions" },
+    { end: 150, title: "Interiors" },
+    { end: 10, title: "Years" },
+  ];
 
   return (
     <div id="counter-back">
@@ -45,25 +31,9 @@ const Counter = () => {
         <h1>Overview</h1>
 
         <div className="stats-container">
-          <div className="stat">
-            <div className="stat-value" data-end="1000"></div>
-            <div className="stat-title">Designs</div>
-          </div>
-
-          <div className="stat">
-            <div className="stat-value" data-end="10"></div>
-            <div className="stat-title">Constructions</div>
-          </div>
-
-          <div className="stat">
-            <div className="stat-value" data-end="150"></div>
-            <div className="stat-title">Interiors</div>
-          </div>
-
-          <div className="stat">
-            <div className="stat-value" data-end="10"></div>
-            <div className="stat-title">Years</div>
-          </div>
+          {stats.map((stat, index) => (
+            <Stat key={index} {...stat} />
+          ))}
         </div>
 
         <h2>"Years of Experience, Solutions with Precision."</h2>

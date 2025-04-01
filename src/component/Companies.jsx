@@ -18,46 +18,46 @@ const Companies = () => {
     <div className="slider">
     <div className="slide-track">
     <div className="slide">
-        <img src={client1} height={120} width={300} alt />
+        <img src={client1} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client2} height={120} width={300} alt />
+        <img src={client2} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client3} height={120} width={300} alt />
+        <img src={client3} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client4} height={120} width={300} alt />
+        <img src={client4} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client5} height={120} width={300} alt />
+        <img src={client5} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client6} height={120} width={300} alt />
+        <img src={client6} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client7} height={120} width={300} alt />
+        <img src={client7} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client1} height={120} width={300} alt />
+        <img src={client1} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client2} height={120} width={300} alt />
+        <img src={client2} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client3} height={120} width={300} alt />
+        <img src={client3} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client4} height={120} width={300} alt />
+        <img src={client4} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client5} height={120} width={300} alt />
+        <img src={client5} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client6} height={120} width={300} alt />
+        <img src={client6} height={120} width={300}  />
     </div>
     <div className="slide">
-        <img src={client7} height={120} width={300} alt />
+        <img src={client7} height={120} width={300}  />
     </div>
     </div>
     </div>

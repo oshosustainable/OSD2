@@ -1,0 +1,40 @@
+.companies-section {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .companies-section h2 {
+    font-size: 48px;
+    color: rgba(11, 41, 55, 0.95);
+  }
+  
+  /* Unique animation */
+  @keyframes companies-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-300px * 7)); }
+  }
+  
+  .companies-slider {
+    background: white;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .companies-track {
+    display: flex;
+    width: calc(300px * 14);
+    animation: companies-scroll 40s linear infinite;
+  }
+  
+  .companies-item {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

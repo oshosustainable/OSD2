@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="contact-content">
         <h1>CONTACT US</h1>
         <div className="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.402498716154!2d85.29800255932251!3d27.722399472052533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19f5a3b427f3%3A0xd1eeada324209fa2!2sGrace%20Dental%20Care!5e0!3m2!1sen!2snp!4v1687243949822!5m2!1sen!2snp" width="100%" height="400px" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" style={{borderRadius:"10px"}}></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1765.895975776091!2d85.2966706!3d27.7237092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190034e7aba9%3A0x8c624d2bfd4c39d4!2sOsho%20Sustainable%20Designers%20and%20Developers%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1743583953491!5m2!1sen!2snp"  width="100%" height="400px" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" style={{borderRadius:"10px"}}></iframe>
         </div>
         <div className="contact-details">
             <div className="contact-info">

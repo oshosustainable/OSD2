@@ -56,3 +56,10 @@ textarea{
     padding: 0px;
     width: 150px;
 }
+
+@media (max-width: 640px) {
+    .contact-content h1{
+      font-size: 42px;
+    }
+    
+  }

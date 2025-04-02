@@ -7,10 +7,10 @@ const Upbutton = () => {
 
         const handleScroll = () => {
             const button = document.getElementById("upbutton");
-            if(window.scrollY > 200){
+            if(window.scrollY > 400){
                 button.style.display = 'block';
             }
-            if(window.scrollY < 200){
+            if(window.scrollY < 400){
                 button.style.display = 'none';
             }
         };

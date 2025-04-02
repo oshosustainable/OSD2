@@ -64,3 +64,12 @@ span{
   background: rgba(58, 117, 146, 0.95);
   
 }
+
+@media (max-width: 640px) {
+  .text h2{
+    font-size: 50px;
+  }
+  .text h4{
+    font-size: 20px;
+  }
+}

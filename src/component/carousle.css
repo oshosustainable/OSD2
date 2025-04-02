@@ -7,9 +7,11 @@
 
 .carousel-control-prev-icon , .carousel-control-next-icon{
     padding: 20px;
-    background-color: rgb(182, 181, 181);
+    background-color: rgb(56, 56, 56);
 }
 .carousel-item span{
     color: black;
     font-size: large;
+    display: block;
+    width: 100%;
 }

@@ -11,6 +11,8 @@ import Testimonial from '../component/Testimonial'
 import Companies from '../component/Companies'
 import Upbutton from '../component/Upbutton'
 import SloganBanner from '../component/SloganBanner'
+import Faqs from '../component/Faqs'
+// import Gallery from '../component/Gallery'
 
 const Homepage = () => {
   return (
@@ -20,10 +22,12 @@ const Homepage = () => {
     <SloganBanner/>
     <About/>
     <Counter/>
+    <Companies/>
     {/* <Testimonial/> */}
     <Services/>
     <Lightbox/>
-    <Companies/>
+    {/* <Gallery/> */}
+    <Faqs/>
     <Contact/>
     <Footer/>
     <Upbutton/>

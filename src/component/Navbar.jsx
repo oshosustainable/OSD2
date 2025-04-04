@@ -25,7 +25,7 @@ const Navbar = () => {
         <input type="radio" name="slider" id="menu-btn" />
         <input type="radio" name="slider" id="close-btn" />
         <ul className="nav-links">
-        <label htmlFor="close-btn" className="btn close-btn"><i className="fas fa-times" /><IoClose /></label>
+        <label htmlFor="close-btn" className="btn close-btn"><i /><IoClose /></label>
         <li><Link to="/home" onClick={handleCloseNav}>Home</Link></li>
         <li><Link to="/about " onClick={handleCloseNav}>About</Link></li>
         <li><Link to="/projects" onClick={handleCloseNav}>Projects</Link></li>
@@ -34,7 +34,7 @@ const Navbar = () => {
  
 
         </ul>
-        <label htmlFor="menu-btn" className="btn menu-btn"><i className="bi bi-list" /><FiMenu /></label>
+        <label htmlFor="menu-btn" className="btn menu-btn"><i  /><FiMenu /></label>
    
         
    

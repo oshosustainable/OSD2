@@ -1,0 +1,174 @@
+.gal3d__main-container {
+  position: relative;
+  width: 100%;
+  /* height: 500px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  background: rgba(11, 41, 55, 0.95);
+
+}
+
+.gal3d__perspective-wrapper {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.gal3d__image-card {
+  position: absolute;
+  width: 498px;
+  height: 280px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+  transform-origin: center center;
+  transform-style: preserve-3d;
+  z-index: 1;
+  opacity: 1;
+}
+
+.gal3d__card-image {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gal3d__card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.gal3d__price-tag {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.gal3d__star-rating {
+  color: gold;
+}
+
+/* Position styles for carousel items */
+.gal3d__image-card[data-gal3d-position="0"] {
+  transform: translateX(0) scale(1);
+  z-index: 5;
+  opacity: 1;
+}
+
+.gal3d__image-card[data-gal3d-position="-1"] {
+  transform: translateX(-50%) scale(0.80);
+  z-index: 4;
+}
+
+.gal3d__image-card[data-gal3d-position="1"] {
+  transform: translateX(50%) scale(0.80);
+  z-index: 4;
+}
+
+.gal3d__image-card[data-gal3d-position="-2"] {
+  transform: translateX(-90%) scale(0.65);
+  z-index: 3;
+}
+
+.gal3d__image-card[data-gal3d-position="2"] {
+  transform: translateX(90%) scale(0.65);
+  z-index: 3;
+}
+
+/* Controls */
+.gal3d__navigation-panel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 20px; */
+}
+
+.gal3d__arrow-prev,
+.gal3d__arrow-next {
+  background: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
+}
+
+.gal3d__dot-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gal3d__indicator-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.gal3d__indicator-dot--active {
+  background-color: #080808;
+  width: 12px;
+  height: 12px;
+  border: 1px solid white;
+}
+
+
+
+@media(max-width:1000px){
+  .gal3d__perspective-wrapper {
+    height: 300px;
+  }
+  .gal3d__image-card {
+    width: 380px;
+    height: 214px;
+  }
+}
+@media(max-width:748px){
+  .gal3d__perspective-wrapper {
+    height: 250px;
+  }
+  .gal3d__image-card {
+    width: 320px;
+    height: 180px;
+  }
+}
+@media(max-width:420px){
+  .gal3d__perspective-wrapper {
+    height: 230px;
+  }
+  .gal3d__image-card {
+    width: 300px;
+    height: 169px;
+  }
+}

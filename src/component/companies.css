@@ -1,11 +1,12 @@
 .companies-section {
-    padding: 20px 0;
+    padding: 50px 0;
     text-align: center;
   }
   
   .companies-section h2 {
     font-size: 48px;
     color: rgba(11, 41, 55, 0.95);
+    margin-bottom: 20px;
   }
   
   /* Unique animation */

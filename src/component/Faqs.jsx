@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './faqs.css';
 import faqimage from './images/faqs.png';
@@ -61,7 +61,7 @@ function Faqs() {
                     >
                         <div className={`question${index + 1}`} onClick={() => handleClick(index)}>
                             {faq.question}
-                            <a><i className={`bi ${openIndex === index ? 'bi-chevron-up' : 'bi-chevron-down'}`}></i></a>
+                            <a><i className={`bi ${openIndex === index ? 'bi-chevron-up' : 'bi-chevron-down'}`} style={{color:'black'}}></i></a>
                         </div>
                         
                         <motion.div 

@@ -40,7 +40,7 @@ const Carousle = () => {
           <div className="carousel-item active">
             <img src={main1} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block opacity-75">
-              <span className="bg-light-subtle p-2 rounded-3">
+              <span>
                 Chitwan District Court
               </span>
             </div>
@@ -48,7 +48,7 @@ const Carousle = () => {
           <div className="carousel-item">
             <img src={main3} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block opacity-75">
-              <span className="bg-light-subtle p-2 rounded-3">
+              <span>
                 Itahari Road Project
               </span>
             </div>
@@ -56,7 +56,7 @@ const Carousle = () => {
           <div className="carousel-item">
             <img src={main2} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block opacity-75">
-              <span className="bg-light-subtle p-2 rounded-3">
+              <span>
                 Nandani Dairy and Restaurant
               </span>
             </div>
@@ -64,7 +64,7 @@ const Carousle = () => {
           <div className="carousel-item">
             <img src={main4} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block opacity-75">
-              <span className="bg-light-subtle p-2 rounded-3">
+              <span>
                 Education Development Directorate
               </span>
             </div>
@@ -72,7 +72,7 @@ const Carousle = () => {
           <div className="carousel-item">
             <img src={main5} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block opacity-75">
-              <span className="bg-light-subtle p-2 rounded-3">
+              <span>
                 Naxal Appartment
               </span>
             </div>
@@ -80,7 +80,7 @@ const Carousle = () => {
           <div className="carousel-item">
             <img src={main6} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block opacity-75">
-              <span className="bg-light-subtle p-2 rounded-3">
+              <span>
                 Dipayal High Court
               </span>
             </div>
@@ -88,7 +88,7 @@ const Carousle = () => {
           <div className="carousel-item">
             <img src={main7} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block opacity-75">
-              <span className="bg-light-subtle p-2 rounded-3">
+              <span>
                 Department of Road Butwal
               </span>
             </div>

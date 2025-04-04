@@ -9,6 +9,10 @@ import galary3 from './images/galary3.jpg';
 import galary4 from './images/galary4.jpg';
 import galary5 from './images/galary5.jpg';
 import galary6 from './images/galary6.jpg';
+import galary7 from './images/galary7.jpg';
+import galary8 from './images/galary8.jpg';
+import galary9 from './images/galary9.jpg';
+import galary10 from './images/galary10.jpg';
 
 const Gallery = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -21,7 +25,11 @@ const Gallery = () => {
     { src: galary3, alt: "Gallery image 3" },
     { src: galary4, alt: "Gallery image 4" },
     { src: galary5, alt: "Gallery image 5" },
-    { src: galary6, alt: "Gallery image 6" }
+    { src: galary6, alt: "Gallery image 6" },
+    { src: galary7, alt: "Gallery image 7" },
+    { src: galary8, alt: "Gallery image 8" },
+    { src: galary9, alt: "Gallery image 9" },
+    { src: galary10, alt: "Gallery image 10" },
   ];
 
   const goToPrevious = () => {
@@ -97,7 +105,7 @@ const Gallery = () => {
       <div style={{ marginTop: "20px" }}>
         <Link to="/projects" style={{ textDecoration: "none" }}>
           <h4 style={{ textAlign: "center", padding: "20px", color: "white", }}>
-            "OSHO Sustainable Designers and Developers Pvt Ltd. Photo Gallery." <span>Click to see more.</span>
+            "OSHO Sustainable Designers and Developers Pvt Ltd. Photo Gallery." <br /><span style={{  fontSize:'20px', cursor: 'pointer',}}>Click to see more →</span>
           </h4>
         </Link>
       </div>

@@ -69,6 +69,7 @@ function Faqs() {
                             initial={{ height: 0, opacity: 0 }}
                             animate={openIndex === index ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
                             transition={{ duration: 0.3 }}
+                            style={{ fontSize: '15px' }}
                         >
                             {faq.answer}
                         </motion.div>

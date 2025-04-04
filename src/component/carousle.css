@@ -9,9 +9,15 @@
     padding: 20px;
     background-color: rgb(56, 56, 56);
 }
-.carousel-item span{
-    color: black;
+.carousel-item span {
+    background-color: rgb(56, 56, 56);
+    border-radius: 8px;
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
     font-size: large;
-    display: block;
-    width: 100%;
-}
+    display: inline-block; /* Ensures proper block behavior without full width */
+    white-space: normal;   /* Allows wrapping */
+    word-break: break-word; /* Prevents overflow due to long words */
+    line-height: 1.5;       /* Improves line spacing */
+    text-align: center;     /* Optional: centers text if needed */
+  }

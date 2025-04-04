@@ -12,7 +12,7 @@ import Upbutton from '../component/Upbutton'
 import SloganBanner from '../component/SloganBanner'
 import Faqs from '../component/Faqs'
 import Gallery from '../component/Gallery'
-// import WhyUs from '../component/WhyUs'
+import WhyUs from '../component/WhyUs'
 
 const Homepage = () => {
   return (
@@ -24,7 +24,7 @@ const Homepage = () => {
     <Counter/>
     {/* <Testimonial/> */}
     <Services/>
-    {/* <WhyUs/> */}
+    <WhyUs/>
     <Companies/>
     <Gallery/>
     <Faqs/>
